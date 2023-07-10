@@ -46,34 +46,53 @@ const TaskManager = () => {
 
   return (
     <div className="task-manager">
-      <h2>Task Manager</h2>
-      <form onSubmit={handleNewTaskSubmit}>
+      <h2 className="text-2xl font-bold">Task Manager</h2>
+      <form onSubmit={handleNewTaskSubmit} className="mb-4">
         <input
           type="text"
           placeholder="Enter a new task"
           value={newTask}
           onChange={handleNewTaskChange}
+          className="form-control"
         />
-        <button type="submit">Add Task</button>
+        <button type="submit" className="btn btn-primary mt-2">
+          Add Task
+        </button>
       </form>
       <ul>
         {tasks.map((task, index) => (
-          <li key={index} className="task-item">
+          <li
+            key={index}
+            className={`task-item ${
+              index === tasks.length - 1 ? "border-2 border-primary" : ""
+            }`}
+          >
             {editingTaskIndex === index ? (
-              <form onSubmit={handleEditingTaskSubmit}>
+              <form onSubmit={handleEditingTaskSubmit} className="mb-2">
                 <input
                   type="text"
                   value={editingTaskValue}
                   onChange={handleEditingTaskChange}
+                  className="form-control"
                 />
-                <button type="submit">Save</button>
+                <button type="submit" className="btn btn-primary mt-2">
+                  Save
+                </button>
               </form>
             ) : (
               <>
                 {task}
-                <div>
-                  <button onClick={() => handleTaskEdit(index)}>Edit</button>
-                  <button onClick={() => handleTaskDelete(index)}>
+                <div className="mt-2">
+                  <button
+                    onClick={() => handleTaskEdit(index)}
+                    className="btn btn-primary mr-2"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    onClick={() => handleTaskDelete(index)}
+                    className="btn btn-danger"
+                  >
                     Delete
                   </button>
                 </div>

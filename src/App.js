@@ -5,7 +5,6 @@ import Home from "./components/Home";
 import About from "./components/About";
 import TaskManager from "./components/TaskManager";
 import TypingTest from "./components/TypingTest";
-import "bulma/css/bulma.min.css";
 import "./styles/Navbar.css";
 import "./styles/Taskmanager.css";
 import "./styles/TypingTest.css";
@@ -24,6 +23,8 @@ class App extends Component {
             <Route path="/" element={<Home />} />
           </Routes>
         </div>
+
+        <div className="NavBar2">{<NavBar />}</div>
       </div>
     );
   }

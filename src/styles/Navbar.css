@@ -1,7 +1,13 @@
 /* Navbar.css */
 nav {
-  background-color: #333;
+  background-color: black;
   padding: 10px;
+}
+
+.NavBar2 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 ul {
@@ -15,12 +21,10 @@ li {
   margin-right: 10px;
 }
 
-li:last-child {
-  margin-right: 0;
-}
-
 a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   padding: 5px 10px;
+  font-size: large;
+  font-weight: bold;
 }

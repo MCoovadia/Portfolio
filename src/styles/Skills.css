@@ -1,0 +1,15 @@
+.pb-2 {
+  padding-bottom: 0.5rem !important;
+}
+
+h2 {
+  font-size: calc(1.325rem + 0.9vw) !important;
+}
+
+.list-group-item-action:hover {
+  background-color: black; /* Change the background color to your desired color */
+}
+
+.list-group-item {
+  background-color: rgb(255 237 213) !important;
+}
