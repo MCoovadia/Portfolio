@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import TaskManager from "./components/TaskManager";
 import TypingTest from "./components/TypingTest";
+import Weather from "./components/Weather";
 import "./styles/Navbar.css";
 import "./styles/Taskmanager.css";
 import "./styles/TypingTest.css";
@@ -20,6 +21,7 @@ class App extends Component {
             <Route path="/TypingTest" element={<TypingTest />} />
             <Route path="/TaskManager" element={<TaskManager />} />
             <Route path="/About" element={<About />} />
+            <Route path="/Weather" element={<Weather />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </div>

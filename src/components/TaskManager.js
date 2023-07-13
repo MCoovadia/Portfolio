@@ -45,7 +45,7 @@ const TaskManager = () => {
   };
 
   return (
-    <div className="task-manager">
+    <div className="task-manager bg-gray-100">
       <h2 className="text-2xl font-bold">Task Manager</h2>
       <form onSubmit={handleNewTaskSubmit} className="mb-4">
         <input

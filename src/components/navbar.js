@@ -28,6 +28,9 @@ const Navbar = () => {
         <li>
           <Link to="/TypingTest">Typing Test</Link>
         </li>
+        {/* <li>
+          <Link to="/Weather">Weather</Link>
+        </li> */}
       </ul>
     </nav>
   );

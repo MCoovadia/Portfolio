@@ -7,9 +7,10 @@ h2 {
 }
 
 .list-group-item-action:hover {
-  background-color: black; /* Change the background color to your desired color */
+  background-color: black;
 }
 
 .list-group-item {
-  background-color: rgb(255 237 213) !important;
+  background-color: RGB(41, 43, 44) !important;
+  color: rgb(255 237 213);
 }

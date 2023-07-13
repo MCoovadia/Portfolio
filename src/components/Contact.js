@@ -7,9 +7,9 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-red-400 ">
+    <section className="ContactSection border border-black bg-dark">
       <div className="containerContact mx-auto">
-        <h2 className="text-center text-2xl font-bold mb-4  text-black-600">
+        <h2 className="ContactHeader text-center text-2xl font-bold mb-4 italic">
           Contact Me
         </h2>
         <div className="Boxes">
