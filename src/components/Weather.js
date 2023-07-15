@@ -14,7 +14,7 @@ const WeatherApp = () => {
 
     if (location.trim() !== "") {
       try {
-        const apiKey = `${process.env.REACT_APP_WEATHER_KEY}`; // Replace with your OpenWeatherMap API key
+        const apiKey = `${process.env.REACT_APP_WEATHER_KEY}`;
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`;
 
         const response = await fetch(apiUrl);
