@@ -9,11 +9,11 @@ const Contact = () => {
   return (
     <section className="ContactSection border border-black bg-dark">
       <div className="containerContact mx-auto">
-        <h2 className="ContactHeader text-center text-2xl font-bold mb-4 italic">
-          Contact Me
-        </h2>
         <div className="Boxes">
           <div className="w-1/2">
+            <h2 className="ContactHeader  text-2xl font-bold mb-4 italic">
+              Contact Me
+            </h2>
             <form
               name="contact"
               method="POST"
