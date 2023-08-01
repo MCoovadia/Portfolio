@@ -1,5 +1,4 @@
 import React from "react";
-import Contact from "./Contact";
 import Skills from "./Skills";
 
 const Home = () => {
@@ -16,9 +15,6 @@ const Home = () => {
       </div>
       <section>
         <div className="Skills">{<Skills />}</div>
-      </section>
-      <section>
-        <div className="Contact-Home">{<Contact />}</div>
       </section>
     </div>
   );

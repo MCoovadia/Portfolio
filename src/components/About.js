@@ -1,5 +1,6 @@
 import React from "react";
 import Weather from "./Weather";
+import Contact from "./Contact";
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
         <h2>My Location</h2>
         <div class="map-responsive">
           <iframe
-            src="https://www.google.com/maps/embed/v1/place?q=80+Acorn+Place,+Mississauga,+ON,+Canada&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            src="https://www.google.com/maps/embed/v1/place?q=Mississauga,+ON,+Canada&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
             width="600"
             title="unique"
             height="450"
@@ -17,6 +18,9 @@ const About = () => {
         </div>
         <div className="Weather">{<Weather />}</div>
       </div>
+      <section>
+        <div className="Contact-Home">{<Contact />}</div>
+      </section>
     </div>
   );
 };

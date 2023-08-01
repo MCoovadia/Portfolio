@@ -103,10 +103,44 @@ p {
   font-weight: bold;
 }
 
-.Contact-Home {
-  position: absolute;
-  bottom: 0;
+/* CSS for the main container */
 
-  margin-left: auto;
-  background-color: rgb(255 237 213);
+/* CSS for each section */
+.contact {
+  flex: 1 0 30%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.weather {
+  flex: 1 0 30%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.map-responsive {
+  flex: 1 0 30%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .contact,
+  .weather,
+  .map-responsive {
+    width: 100%;
+  }
 }
